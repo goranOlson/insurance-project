@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body > header {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ddd;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+
+.header-section {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 100px 100px;
+    background-color: red;
+}
+.header-section h1 {
+    font-size: 190%;
+}
+
+.box-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-section  .learn {
+    background-color: orange;
+}
+.header-section .join {
+    background-color: yellow;
+}
