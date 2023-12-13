@@ -7,9 +7,7 @@ body {
 body > header {
     display: flex;
     flex-direction: column;
-    /* background-color: #ddd; */
-
-        display: none;
+        /* display: none; */
 }
 
 h2 {
@@ -45,17 +43,13 @@ nav a {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 640px 280px 280px;
-    background-color: red;
 }
+
 .header-section h1 {
     font-size: 190%;
 }
 
 .covered {
-    background-color: rgb(192, 223, 233);
-    background-color: rgb(204 236 247);
-    background-color: #c7ddea;
-    background-color: #ddeef8;
     position: relative;
 }
 .covered h1,
@@ -70,7 +64,6 @@ nav a {
     font-weight: bold;
 }
 
-
 .covered img {
     height: 290px;
     position: absolute;
@@ -84,33 +77,56 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-.header-section  .learn {
-    background-color: #F17949;
+.box-h p {
+    font-size: 60%;
 }
-.header-section .join {
-    background-color: #FAB131;
-}
+
 .header-section p {
      margin: 0;
      
  }
- p.question {
-    font-size: 60%;
- }
 
 
 
- /* footer */
+
+ /*--- main ---*/
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+section.how-it-works {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    background-color: #C7DDEA;
+}
+
+.how-box {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nbr {
+    color: #888;
+    font-size: 130%;
+    font-weight: bold;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+
+ /*--- footer ---*/
  footer {
     height: 200px;
-    background-color: #F17949;
-    background-color: #FAB131;
-    background-color: #C7DDEA;
-    background-color: #A9A19E;
-    background-color: #777574;
  }
  .to-top {
-    background-color: #A9A19E;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,3 +136,9 @@ nav a {
     margin: 0;
     margin-top: -6px;
 }
+
+.bg-blueish { background-color: #C7DDEA; }
+.bg-orangeish { background-color: #F17949; }
+.bg-yellowish { background-color: #FAB131; }
+.bg-brownish { background-color: #A9A19E; }
+.bg-grayish { background-color: #777574; }
