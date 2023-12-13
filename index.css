@@ -11,6 +11,11 @@ body > header {
     background-color: #ddd;
 }
 
+h2 {
+    margin: 0;
+    color: white;
+ }
+
 nav {
     display: flex;
     flex-direction: column;
@@ -23,24 +28,43 @@ nav a {
 
 
 .header-section {
-    
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px 100px 100px;
+    grid-template-columns: 100%;
+    grid-template-rows: 640px 320px 320px;
     background-color: red;
 }
 .header-section h1 {
     font-size: 190%;
 }
 
+.covered {
+    background-color: lightblue;
+    position: relative;
+}
+.covered h1,
+.covered p {
+    padding: 16px;
+}
+.covered .price {
+    color: white;
+}
+
+.covered img {
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+}
+
 .box-h {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .header-section  .learn {
-    background-color: orange;
+    background-color: darkorange;
 }
 .header-section .join {
-    background-color: yellow;
+    background-color: orange;
 }
+.header-section p { margin: 0; }
