@@ -16,10 +16,23 @@ h2 {
     color: white;
  }
 
+ button {
+    margin: 16px;
+    padding: 16px 30px;
+    background-color: white;
+    border: 0;
+    border-radius: 22px;
+    box-shadow: 1px 1px 1px #aaa;
+    font-size: 70%;
+    font-weight: bold;
+    display: block;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+        display: none;
 }
 nav a {
     color: #222;
@@ -30,7 +43,7 @@ nav a {
 .header-section {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 640px 320px 320px;
+    grid-template-rows: 640px 280px 280px;
     background-color: red;
 }
 .header-section h1 {
@@ -38,21 +51,30 @@ nav a {
 }
 
 .covered {
-    background-color: lightblue;
+    background-color: rgb(192, 223, 233);
+    background-color: rgb(204 236 247);
+    background-color: #c7ddea;
+    background-color: #ddeef8;
     position: relative;
 }
 .covered h1,
 .covered p {
+    margin-top: 50px;
+    margin-bottom: 0;
     padding: 16px;
 }
+
 .covered .price {
     color: white;
+    font-weight: bold;
 }
 
+
 .covered img {
-    height: 300px;
+    height: 290px;
     position: absolute;
     bottom: 0px;
+    right: 8px;
 }
 
 .box-h {
@@ -62,9 +84,15 @@ nav a {
     align-items: center;
 }
 .header-section  .learn {
-    background-color: darkorange;
+    background-color: #F17949;
 }
 .header-section .join {
-    background-color: orange;
+    background-color: #FAB131;
 }
-.header-section p { margin: 0; }
+.header-section p {
+     margin: 0;
+     
+ }
+ p.question {
+    font-size: 60%;
+ }
