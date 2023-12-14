@@ -22,7 +22,7 @@ h2 {
     border: 0;
     border-radius: 22px;
     box-shadow: 1px 1px 1px #aaa;
-    font-size: 70%;
+    font-size: 60%;
     font-weight: bold;
     display: block;
 }
@@ -172,10 +172,12 @@ section.how-it-works {
 
     .header-section {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 250px 250px;
     }
-    
 
+    .covered {
+        grid-row: 1 / 3;
+    }
 
 
     nav {
