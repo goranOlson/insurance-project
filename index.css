@@ -27,48 +27,58 @@ h2 {
     display: block;
 }
 
-nav {
+/*--- nav ---*/
+.header-nav {
     display: flex;
     flex-direction: column;
     background-color: #fff;
         display: none;
 }
-nav a {
+.header-nav a {
     color: #222;
     text-decoration: none;
 }
-
-
-.header-section {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 640px 265px 265px;
-    grid-template-rows: 625px 275px 275px;
+nav a.target {
+    font-weight: bold;
 }
 
-.header-section h1 {
+/*--- header ---*/
+.header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 250px 250px;
+}
+
+.header h1 {
     font-size: 190%;
 }
 
-.covered {
+.box-covered {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.covered h1,
-.covered p {
+.covered-inner {
+    max-width: 400px;
+    /* background-color: #fff; */
+}
+.box-covered h1,
+.box-covered p {
     margin-top: 50px;
     margin-bottom: 0;
     padding: 16px;
     font-size: 75%;
 }
-.covered h1 { font-size:  220%;}
-.covered p { line-height: 150%;}
+.box-covered h1 { font-size:  220%;}
+.box-covered p { line-height: 150%;}
 
-.covered .price {
+.box-covered .price {
     color: white;
     font-weight: bold;
 }
 
-.covered img {
+.box-covered img {
     height: 290px; height: 280px;
     position: absolute;
     bottom: 0px;
@@ -85,7 +95,7 @@ nav a {
     font-size: 60%;
 }
 
-.header-section p {
+.header p {
      margin: 0;
      
  }
@@ -170,19 +180,35 @@ section.how-it-works {
         font-size: 80%;
     }
 
-    .header-section {
+    .header {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 250px;
+        grid-template-rows: 300px 300px;
     }
 
-    .covered {
+    .box-covered {
         grid-row: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px auto;
+        grid-template-areas: 
+        "box-covered box-offer"
+        "box-covered box-waiting"
+        "header-nav header-nav";
     }
 
-
-    nav {
+    .box-offer { grid-area: box-offer; }
+    .box-waiting { grid-area:  box-waiting; }
+    .header-nav {
+        grid-area: header-nav;
+        padding-block: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        column-gap: 80px;
     }
 }
