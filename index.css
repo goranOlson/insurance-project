@@ -7,7 +7,7 @@ body {
 body > header {
     display: flex;
     flex-direction: column;
-        /* display: none; */
+        display: none;
 }
 
 h2 {
@@ -97,24 +97,33 @@ main {
 }
 
 section.how-it-works {
+    color: black;
+    font-weight: bold;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    background-color: #C7DDEA;
+    /* background-color: #C7DDEA; */
 }
 
 .how-box {
-    height: 100px;
+    height: 146px;
+    color: #333;
+    font-size: 90%;
+    text-align: center;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+.how-box h1 {
+    color: black;
+    font-size: 240%;
+}
 
 .nbr {
     color: #888;
-    font-size: 130%;
+    font-size: 150%;
     font-weight: bold;
     position: absolute;
     left: 8px;
@@ -137,8 +146,23 @@ section.how-it-works {
     margin-top: -6px;
 }
 
+
 .bg-blueish { background-color: #C7DDEA; }
 .bg-orangeish { background-color: #F17949; }
 .bg-yellowish { background-color: #FAB131; }
 .bg-brownish { background-color: #A9A19E; }
 .bg-grayish { background-color: #777574; }
+.bg-lightgray { background-color: #ebebeb; }
+
+
+
+
+@media screen and (min-width: 600px) {
+    section.how-it-works {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .how-box {
+        font-size: 80%;
+    }
+}
