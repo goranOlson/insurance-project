@@ -156,11 +156,7 @@ section.how-it-works {
     top: 8px;
 }
 
-
-section.your-personal {
-
-}
-
+/*--- Your personal ---*/
 section.your-personal .card-collection {
     padding: 50px 0;
     display: flex;
@@ -216,9 +212,16 @@ section.your-personal .card p {
 }
 
 
+/*--- about us ---*/
+.about-us-container  {
+    padding-block: 10px;
+    text-align: center;
+}
 
-
-
+.about-us-container p {
+    padding-top: 0;
+    padding-inline: 50px;
+}
 
  /*--- footer ---*/
  footer {
