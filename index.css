@@ -4,10 +4,10 @@ body {
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body > header {
+.header {
     display: flex;
     flex-direction: column;
-        /* display: none; */
+        display: none;
 }
 
 h2 {
@@ -47,6 +47,7 @@ nav a.target {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 600px 250px 250px;
+     display: none
 }
 
 .header h1 {
@@ -183,6 +184,7 @@ section.how-it-works {
     .header {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px;
+            display: none;
     }
 
     .box-covered {
