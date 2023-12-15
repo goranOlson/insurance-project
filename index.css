@@ -17,7 +17,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     padding: 16px;
-        color: green;
+        color: white;
 }
 
 h2 {
@@ -31,7 +31,7 @@ p {
     padding: 16px;
     font-size: 75%;
     line-height: 150%;
-        color: red;
+        color: black;
 }
 
 
@@ -68,7 +68,7 @@ nav a.target {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 600px 250px 250px;
-     display: none
+     /* display: none */
 }
 
 
@@ -128,7 +128,7 @@ section.how-it-works {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     /* background-color: #C7DDEA; */
-        display: none;
+        /* display: none; */
 }
 
 .how-box {
@@ -141,6 +141,9 @@ section.how-it-works {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.how-box h1 {
+    color: black;
 }
 
 
@@ -159,7 +162,7 @@ section.your-personal {
 }
 
 section.your-personal .card-collection {
-    padding: 40px 0;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -171,7 +174,7 @@ section.your-personal .card-collection {
 
 section.your-personal .card {
     width: 200px;
-    height: 230px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,8 +201,18 @@ section.your-personal .card .img-box img {
     height: fit-content;
 }
 
+section.your-personal .card .img-box img.woman {
+    width: 70px;
+}
+
+
+section.your-personal .card .img-box img.old-man {
+    width: 110px;
+}
+
 section.your-personal .card p {
-    font-size: 8px;
+    font-size: 9px;
+    text-align: center;
 }
 
 
@@ -210,17 +223,19 @@ section.your-personal .card p {
  /*--- footer ---*/
  footer {
     height: 200px;
-        display: none;
+        /* display: none; */
  }
  .to-top {
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: none; */
+    display: none;
  }
  .to-top .txt {
     margin: 0;
     margin-top: -6px;
+    padding: 0;
 }
 
 
