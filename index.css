@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-    font-size: 220%;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 16px;
@@ -24,10 +24,15 @@ h2 {
     margin: 0;
     color: white;
 }
+h1, h2, h3 {
+    font-family: 'Frank Ruhl Libre';
+
+}
 
 p {
+    font-family: 'Fira Sans';
     /* margin-top: 50px; */
-    margin-bottom: 0;
+    padding-top: 0;
     padding: 16px;
     font-size: 75%;
     line-height: 150%;
@@ -37,7 +42,7 @@ p {
 
  button {
     margin: 16px;
-    padding: 16px 30px;
+    padding: 12px 30px;
     background-color: white;
     border: 0;
     border-radius: 22px;
@@ -83,6 +88,9 @@ nav a.target {
 .covered-inner {
     max-width: 400px;
     /* background-color: #fff; */
+}
+.covered-container h1 {
+    color: black
 }
 
 .covered-container .price {
@@ -164,13 +172,12 @@ section.your-personal .card-collection {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-
         /* background-color: #fdd; */
 }
 
 section.your-personal .card {
     width: 200px;
-    height: 250px;
+    height: 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +188,7 @@ section.your-personal .card {
 
 section.your-personal .card .img-box {
     width: 90%;
-    height: 110px;
+    height: 130px;
     margin-bottom: 18px;
     padding: 8px;
     margin-top: -15px;
@@ -193,17 +200,22 @@ section.your-personal .card .img-box {
 }
 
 section.your-personal .card .img-box img {
-    width: 65px;
+    width: 80px;
     height: fit-content;
 }
 
 section.your-personal .card .img-box img.woman {
-    width: 70px;
+    width: 84px;
 }
 
 
 section.your-personal .card .img-box img.old-man {
-    width: 110px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+section.your-personal .card h3 {
+    font-size: 13px;
 }
 
 section.your-personal .card p {
@@ -214,6 +226,7 @@ section.your-personal .card p {
 
 /*--- about us ---*/
 .about-us-container  {
+    height: 475px;
     padding-block: 10px;
     text-align: center;
 }
@@ -253,6 +266,15 @@ section.your-personal .card p {
 
 
 @media screen and (min-width: 600px) {
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    h3 { font-size:  11px;}
+    p {
+        font-size: 11px;
+    }
+
     section.how-it-works {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -264,33 +286,86 @@ section.your-personal .card p {
     .header {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px;
-            display: none;
+            /* display: none; */
     }
 
     .covered-container {
+        padding: 0;
         grid-row: 1 / 3;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .covered-container .covered-inner {
+        padding: 30px 28px;
+    }
     
     .header {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px auto;
+        grid-template-rows: 270px 270px auto;
         grid-template-areas: 
         "covered-container box-offer"
         "covered-container box-waiting"
         "header-nav header-nav";
     }
 
+    .header p {
+        padding-top: 0;
+    }
+
+
     .box-offer { grid-area: box-offer; }
     .box-waiting { grid-area:  box-waiting; }
     .header-nav {
         grid-area: header-nav;
         padding-block: 20px;
+        font-size: 12px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         column-gap: 80px;
     }
+
+
+    /*--- your-personal ---*/
+    section.your-personal {
+        height: 400px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    section.your-personal .card-collection {
+        top: 200px;
+        
+        position: absolute;
+
+    }
+    section.your-personal h1 {
+        flex: 1;
+    }
+    section.your-personal p {
+        flex: 1;
+    }
+
+    section.your-personal .card-collection {
+        flex-direction: row;
+        gap: 20px;
+    }
+    section.your-personal .card-collection .card {
+        width: 180px;
+    }
+    section.your-personal .card .img-box {
+        height: 100px;
+        
+    }
+    section.your-personal .card .img-box img {
+        width: 60px;
+    }
+
+
+section.your-personal .card h3 {
+    font-size: 11px;
+}
+
 }
