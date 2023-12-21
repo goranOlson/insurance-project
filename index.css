@@ -17,6 +17,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     padding: 16px;
+    line-height: 40px;
         color: white;
 }
 
@@ -226,8 +227,9 @@ section.your-personal .card p {
 
 /*--- about us ---*/
 .about-us-container  {
-    height: 475px;
+    /* height: 475px; */
     padding-block: 10px;
+    padding: 30px 0 60px;
     text-align: center;
 }
 
