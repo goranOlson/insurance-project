@@ -5,6 +5,7 @@
 .header.contact .header-inner {
     max-width: unset;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -43,15 +44,15 @@
 /* main */
 main {
     display: block;
+    
 }
 main .main-inner {
-    /* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 120px;
 }
 
 main .main-inner .main-header {
@@ -66,22 +67,65 @@ main .main-inner .main-header h1 {
 
 /* form */
 
-.form-collection {
+main .main-inner .form-collection {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     width: 100%;
     max-width: 400px;
     padding-inline: 10px;
+    color: white;
         /* background-color: green; */
 }
 
-.form-row {
+main .main-inner .form-collection .form-row {
     display: flex;
     flex-direction: column;
+}
+
+main .main-inner .form-collection .form-row label {
+    padding-bottom: 4px;
+}
+
+main .main-inner .form-collection .form-row input,
+main .main-inner .form-collection .form-row textarea {
+    padding: 8px;
+}
+
+
+
+main .main-inner .form-collection button {
+    align-self: flex-end;
+    margin-right: 0;
+}
+
+main .main-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: orange;
+}
+
+main .main-map .our-map {
+    width: 600px;
+    max-width: 600px;
+
+    height: 300px;
+    background-color: white;
 
 }
 
+main .main-map .box {
+    width: max-content;
+    height: 200px;
+    position: absolute;
+    margin-top: -90px;
+}
+main .main-map .box p {
+    color: white;
+    padding-block: 2px;
+}
 
 
 @media screen and (min-width: 600px) {
@@ -99,9 +143,6 @@ main .main-inner .main-header h1 {
     .header.contact .header-nav {
         flex-wrap: nowrap;
         justify-content: center;
-
-        justify-content: center;
-        /* padding-inline: 50px; */
         column-gap: 20px;
     }
     
@@ -110,10 +151,20 @@ main .main-inner .main-header h1 {
     }
 
 
-
     main {
-        grid-template-columns: 200px 200px;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    main .main-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: 1fr;
+        align-items: flex-start;
+        column-gap: 30px;
+        padding-top: 50px;
+    }
+
 
 }
