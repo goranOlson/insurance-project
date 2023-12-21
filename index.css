@@ -60,6 +60,8 @@ p {
     background-color: #fff;
         display: none;
 }
+
+
 .header-nav a {
     color: #222;
     text-decoration: none;
@@ -67,6 +69,44 @@ p {
 nav a.target {
     font-weight: bold;
 }
+
+
+/* header on contact page */
+.header.contact {
+    grid-template-rows: 310px 130px;
+}
+
+.header.contact .covered-inner {
+    position: relative;
+}
+.header.contact .covered-inner h1 {
+    max-width: 270px;
+    color: black;
+}
+
+.header.contact .covered-inner img {
+    width: 60%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+.header.contact .header-nav{
+    display: flex;
+}
+
+.header.contact .header-nav {
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.header.contact .header-nav a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /*--- header ---*/
