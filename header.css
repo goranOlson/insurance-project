@@ -2,24 +2,27 @@
     grid-template-rows: 310px 130px;  /* 0 for area grid-templets-area */
 }
 
-.header.contact .covered-inner {
+.header.contact .header-inner {
     max-width: unset;
     display: flex;
     align-items: center;
     position: relative;
 }
-.header.contact .covered-inner h1 {
+.header.contact .header-inner h1 {
     max-width: 270px;
     color: black;
 }
-
-.header.contact .covered-inner img {
+.header.contact .header-inner  img {
     width: 200px;
     position: absolute;
     right: 10px;
     bottom: 0;
 }
 
+
+
+
+/* nav */
 .header.contact .header-nav{
     display: flex;
 }
@@ -36,10 +39,41 @@
     align-items: center;
 }
 
+
+/* main */
+main {
+    display: block;
+}
+main .main-inner {
+    /* display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+main .main-inner .main-header {
+    /* background-color: red; */
+}
+
+main .main-inner .main-header h1 {
+    width: max-content;
+    margin-inline: auto;
+}
+
+
+/* form */
+
 .form-collection {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding-inline: 10px;
+        /* background-color: green; */
 }
 
 .form-row {
@@ -47,6 +81,7 @@
     flex-direction: column;
 
 }
+
 
 
 @media screen and (min-width: 600px) {
@@ -72,6 +107,13 @@
     
     .header.contact .header-nav a {
         width: auto;
+    }
+
+
+
+    main {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 1fr;
     }
 
 }
