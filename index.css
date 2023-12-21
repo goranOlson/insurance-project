@@ -166,6 +166,21 @@ section.how-it-works {
 }
 
 /*--- Your personal ---*/
+section.your-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.your-personal .your-personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
 section.your-personal .card-collection {
     padding: 50px 0;
     display: flex;
@@ -301,7 +316,13 @@ section.your-personal .card p {
     .covered-container .covered-inner {
         padding: 30px 28px;
     }
+
+    .covered-container p {
+        max-width: 225px;
+    }
     
+
+
     .header {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 270px 270px auto;
@@ -334,25 +355,46 @@ section.your-personal .card p {
         height: 400px;
         padding: 40px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         position: relative;
     }
+
+    section.your-personal .your-personal-info {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    section.your-personal h1 {
+        display: flex;
+        flex: 0 0 50%;
+        justify-content: center;
+    }
+    section.your-personal .your-personal-info .your-p {
+        display: flex;
+        flex: 0 0 50%;
+        justify-content: center;
+    }
+    section.your-personal .your-personal-info p {
+        max-width: 270px;
+    }
+
     section.your-personal .card-collection {
         top: 200px;
         
         position: absolute;
 
     }
-    section.your-personal h1 {
-        flex: 1;
-    }
-    section.your-personal p {
-        flex: 1;
-    }
+    
 
     section.your-personal .card-collection {
         flex-direction: row;
         gap: 20px;
+        top: 240px;
+
+        width: 100%;
+        max-width: 800px;
+        justify-content: space-around;
+        
     }
     section.your-personal .card-collection .card {
         width: 180px;
@@ -366,8 +408,21 @@ section.your-personal .card p {
     }
 
 
-section.your-personal .card h3 {
-    font-size: 11px;
-}
+    section.your-personal .card h3 {
+        font-size: 11px;
+    }
+
+    .about-us-container {
+        padding-top: 190px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-container p {
+        width: 325px;
+        padding: 0;
+    }
 
 }
