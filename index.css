@@ -65,47 +65,14 @@ p {
 .header-nav a {
     color: #222;
     text-decoration: none;
+    padding: 20px;
 }
 nav a.target {
     font-weight: bold;
 }
 
 
-/* header on contact page */
-.header.contact {
-    grid-template-rows: 310px 130px;
-}
 
-.header.contact .covered-inner {
-    position: relative;
-}
-.header.contact .covered-inner h1 {
-    max-width: 270px;
-    color: black;
-}
-
-.header.contact .covered-inner img {
-    width: 60%;
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-}
-
-.header.contact .header-nav{
-    display: flex;
-}
-
-.header.contact .header-nav {
-    flex-direction: row;
-    flex-flow: wrap;
-}
-
-.header.contact .header-nav a {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
@@ -361,8 +328,6 @@ section.your-personal .card p {
         max-width: 225px;
     }
     
-
-
     .header {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 270px 270px auto;
@@ -371,17 +336,16 @@ section.your-personal .card p {
         "covered-container box-waiting"
         "header-nav header-nav";
     }
-
+   
     .header p {
         padding-top: 0;
     }
-
 
     .box-offer { grid-area: box-offer; }
     .box-waiting { grid-area:  box-waiting; }
     .header-nav {
         grid-area: header-nav;
-        padding-block: 20px;
+        /* padding-block: 20px; */
         font-size: 12px;
         display: flex;
         flex-direction: row;
