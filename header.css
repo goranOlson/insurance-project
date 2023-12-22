@@ -1,39 +1,51 @@
-.header.contact {
+.header {
     grid-template-rows: 310px 130px;
 }
 
-.header.contact .header-inner {
+.header .header-inner {
     max-width: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.header.contact .header-inner h1 {
+
+.header .header-inner .content {
+    width: 100%;
+    height: 100%;
+    max-width: 360px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header .header-inner h1 {
     max-width: 270px;
     color: black;
 }
-.header.contact .header-inner  img {
+.header .header-inner  img {
     width: 200px;
     position: absolute;
     right: 10px;
     bottom: 0;
 }
 
-
+.header .header-inner h1 {
+    width: 185px;
+}
 
 
 /* nav */
-.header.contact .header-nav{
+.header .header-nav{
     display: flex;
 }
 
-.header.contact .header-nav {
+.header .header-nav {
     flex-direction: row;
     flex-flow: wrap;
 }
 
-.header.contact .header-nav a {
+.header .header-nav a {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -60,8 +72,8 @@ main .main-inner .main-header {
 }
 
 main .main-inner .main-header h1 {
-    width: max-content;
     margin-inline: auto;
+    width: 400px;
 }
 
 
@@ -85,6 +97,7 @@ main .main-inner .form-collection .form-row {
 
 main .main-inner .form-collection .form-row label {
     padding-bottom: 4px;
+    padding-left: 8px;
 }
 
 main .main-inner .form-collection .form-row input,
@@ -107,46 +120,73 @@ main .main-map {
     background-color: orange;
 }
 
+main .main-map .img-container {
+    width: 100%;
+
+    position: relative;
+    background-color: red;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 372px;
+    border-top: 1px solid #fff;
+}
+
 main .main-map .our-map {
-    width: 600px;
-    max-width: 600px;
-
-    height: 300px;
     background-color: white;
-
+    background-size: cover;
 }
 
 main .main-map .box {
     width: max-content;
-    height: 200px;
+    height: 180px;
     position: absolute;
     margin-top: -90px;
+    z-index: 1;
 }
 main .main-map .box p {
     color: white;
     padding-block: 2px;
 }
 
+.footer {
+    display: none;
+}
 
-@media screen and (min-width: 600px) {
 
-    .header.contact {
+@media screen and (min-width: 700px) {
+
+    .header {
         grid-template-columns: 1fr;
         grid-template-rows: 310px 0px;
     }
 
-    .header.contact .covered-inner {
-        grid-template-rows: 310px 0px;
+    .header .header-inner .content {
         justify-content: center;
     }
 
-    .header.contact .header-nav {
+    .header .covered-inner {
+        grid-template-rows: 310px 0px;
+        justify-content: center;
+    }
+    .header .header-inner .content h1 {
+        width: max-content;
+    }
+
+    .header .header-inner img {
+        right: -100px;
+    }
+
+
+    .header .header-nav {
         flex-wrap: nowrap;
         justify-content: center;
         column-gap: 20px;
     }
     
-    .header.contact .header-nav a {
+    .header .header-nav a {
         width: auto;
     }
 
@@ -166,5 +206,20 @@ main .main-map .box p {
         padding-top: 50px;
     }
 
+    main .main-inner .main-header h1 {
+        width: 300px;
+    }
+
+    main .main-inner .form-collection {
+        padding-top: 16px;
+    }
+
+    main .main-map {
+        height: 372px;
+    }
+
+    .footer {
+        display: block;
+    }
 
 }
