@@ -1,5 +1,5 @@
 .header.contact {
-    grid-template-rows: 310px 130px;  /* 0 for area grid-templets-area */
+    grid-template-rows: 310px 130px;
 }
 
 .header.contact .header-inner {
