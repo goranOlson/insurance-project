@@ -385,7 +385,7 @@ section.your-personal .card p {
 
     /*--- your-personal ---*/
     section.your-personal {
-        height: 400px;
+        height: 430px;
         padding: 40px;
         display: flex;
         justify-content: flex-start;
@@ -395,17 +395,21 @@ section.your-personal .card p {
     section.your-personal .your-personal-info {
         width: 100%;
         flex-direction: row;
+        width: 100%;
+        max-width: 670px;
     }
 
     section.your-personal h1 {
         display: flex;
         flex: 0 0 50%;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-inline: 0;
     }
     section.your-personal .your-personal-info .your-p {
         display: flex;
         flex: 0 0 50%;
         justify-content: center;
+        justify-content: flex-end;
     }
     section.your-personal .your-personal-info p {
         max-width: 270px;
@@ -425,12 +429,12 @@ section.your-personal .card p {
         top: 240px;
 
         width: 100%;
-        max-width: 800px;
-        justify-content: space-around;
+        max-width: 670px;
+        justify-content: space-between;
         
     }
     section.your-personal .card-collection .card {
-        width: 180px;
+        width: 200px;
     }
     section.your-personal .card .img-box {
         height: 100px;
