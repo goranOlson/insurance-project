@@ -1,8 +1,8 @@
-.header {
+#header {
     grid-template-rows: 310px 130px;
 }
 
-.header .header-inner {
+#header .header-inner {
     max-width: unset;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.header .header-inner .content {
+#header .header-inner .content {
     width: 100%;
     height: 100%;
     max-width: 360px;
@@ -19,33 +19,33 @@
     align-items: center;
 }
 
-.header .header-inner h1 {
+#header .header-inner h1 {
     max-width: 270px;
     color: black;
 }
-.header .header-inner  img {
+#header .header-inner  img {
     width: 200px;
     position: absolute;
     right: 10px;
     bottom: 0;
 }
 
-.header .header-inner h1 {
+#header .header-inner h1 {
     width: 185px;
 }
 
 
 /* nav */
-.header .header-nav{
+#header .header-nav{
     display: flex;
 }
 
-.header .header-nav {
+#header .header-nav {
     flex-direction: row;
     flex-flow: wrap;
 }
 
-.header .header-nav a {
+#header .header-nav a {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -65,10 +65,6 @@ main .main-inner {
     row-gap: 20px;
     padding-top: 10px;
     padding-bottom: 120px;
-}
-
-main .main-inner .main-header {
-    /* background-color: red; */
 }
 
 main .main-inner .main-header h1 {
@@ -158,35 +154,38 @@ main .main-map .box p {
 
 @media screen and (min-width: 700px) {
 
-    .header {
+    #header {
         grid-template-columns: 1fr;
         grid-template-rows: 310px 0px;
     }
 
-    .header .header-inner .content {
+    #header .header-inner .content {
         justify-content: center;
     }
 
-    .header .covered-inner {
+    #header .covered-inner {
         grid-template-rows: 310px 0px;
         justify-content: center;
     }
-    .header .header-inner .content h1 {
+    #header .header-inner .content h1 {
         width: max-content;
     }
 
-    .header .header-inner img {
+    #header .header-inner img {
         right: -100px;
     }
 
 
-    .header .header-nav {
-        flex-wrap: nowrap;
+    #header .header-nav {
+        /* flex-wrap: nowrap; */
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        column-gap: 20px;
+        column-gap: 80px;
     }
     
-    .header .header-nav a {
+    #header .header-nav a {
         width: auto;
     }
 
@@ -202,7 +201,7 @@ main .main-map .box p {
         grid-template-columns: repeat(2, 280px);
         grid-template-rows: 1fr;
         align-items: flex-start;
-        column-gap: 30px;
+        column-gap: 16px;
         padding-top: 50px;
     }
 
@@ -215,7 +214,15 @@ main .main-map .box p {
     }
 
     main .main-map {
+        max-width: 100%;
         height: 372px;
+    }
+
+    main .main-map .box {
+        margin: 0;
+        /* left: 40px; */
+        top: 20px;
+        margin-left: -330px;
     }
 
     .footer {
