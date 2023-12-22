@@ -50,7 +50,6 @@ p {
     box-shadow: 1px 1px 1px #aaa;
     font-size: 60%;
     font-weight: bold;
-    /* display: block; */
     width: max-content;
 }
 
@@ -112,10 +111,10 @@ nav a.target {
 }
 
 .covered-container img {
-    width: 290px;
+    width: 270px;
     height: fit-content;
-    
-    margin-inline: auto;
+    align-self: flex-end;
+    margin-right: 8px;
 }
 
 .box-squared {
@@ -185,6 +184,7 @@ section.your-personal {
 }
 
 section.your-personal .your-personal-info {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,6 +258,12 @@ section.your-personal .card p {
     padding-block: 10px;
     padding: 30px 0 60px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-container .about-us-inner {
+    max-width: 400px;
 }
 
 .about-us-container p {
